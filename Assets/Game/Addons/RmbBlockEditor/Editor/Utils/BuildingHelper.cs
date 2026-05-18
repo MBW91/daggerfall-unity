@@ -11,6 +11,7 @@ using DaggerfallWorkshop.Game.Addons.RmbBlockEditor.Elements;
 using DaggerfallWorkshop.Utility.AssetInjection;
 using UnityEngine;
 using UnityEngine.UIElements;
+using Tab = DaggerfallWorkshop.Game.Addons.RmbBlockEditor.Elements.Tab;
 
 namespace DaggerfallWorkshop.Game.Addons.RmbBlockEditor
 {

@@ -5,7 +5,7 @@
 // Source Code:     https://github.com/Interkarma/daggerfall-unity
 // Original Author: Lypyl (lypyl@dfworkshop.net)
 // Contributors:    TheLacus
-// 
+//
 // Notes:
 //
 
@@ -61,13 +61,11 @@ namespace DaggerfallWorkshop.Game.Utility.ModSupport
         /// A good name should be lowercase and without spaces (i.e "example-mod").
         /// A new "Name" property may be created to allow filename to be changed.
         /// </remarks>
-        [SerializeField]
         public string FileName { get; private set; }
 
         /// <summary>
         /// The readable title of the mod, which may contain invalid path characters.
         /// </summary>
-        [SerializeField]
         public string Title
         {
             get { return ModInfo.ModTitle; }
@@ -83,14 +81,12 @@ namespace DaggerfallWorkshop.Game.Utility.ModSupport
         /// If this mod is enabled from the mods window, it will be loaded by the Mod Manager
         /// and methods marked with the <see cref="Invoke"/> attribute will be called at the specified state.
         /// </summary>
-        [SerializeField]
         public bool Enabled { get; set; }
 
         /// <summary>
         /// The position in the load order, which affects the invocation order and
         /// the automatic asset loading by the Asset-Injection framework.
         /// </summary>
-        [SerializeField]
         public int LoadPriority { get; internal set; }
 
         /// <summary>
@@ -1139,7 +1135,7 @@ namespace DaggerfallWorkshop.Game.Utility.ModSupport
         }
 
         /// <summary>
-        /// Unloads the asset bundle associated to this mod. Loaded assets can still be retrieved from cache, 
+        /// Unloads the asset bundle associated to this mod. Loaded assets can still be retrieved from cache,
         /// unless they are also unloaded.
         /// </summary>
         /// <param name="unloadAllObjects">Remove all loaded assets from memory.</param>
